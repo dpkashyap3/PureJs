@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Converter</title>
+    <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+    <h1>Exchange Rate Converter</h1>
+    <p>Choose the currency and the amount to get the exchange rate</p>
+
+    <div class="container">
+        <div class="currency">
+            <select id="currencyprimary">
+                <option value="IND">IND</option>
+            </select>
+            <input type="number" id="primary" placeholder="0" value="1">
+        </div>
+
+        <div class="swap-rate">
+            <button class="btn" id="rate">
+                Swap
+            </button>
+        </div>
+
+
+        <div class="currency">
+            <select id="currencysecondary">
+                <option value="IND">IND</option>
+            </select>
+            <input type="number" id="secondary" placeholder="0" value="1">
+        </div>
+    </div>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>
