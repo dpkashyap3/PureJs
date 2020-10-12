@@ -1,0 +1,41 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    color:black;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    font-size: 72px;
+}
+
+.typing{
+    position: relative;
+    margin-left: 10px;
+
+}
+
+.typing::after{
+content:"";
+position: absolute;
+right:-5px;
+width: 1px;
+height:100%;
+background-color: black;
+border: 2px solid black;
+animation:blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:100;
+    }
+}

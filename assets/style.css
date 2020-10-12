@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.container{
+    display:flex;
+    background-color: azure;
+    align-items: center;
+    justify-items:center;
+    margin:0 auto;
+    width:1024px;
+    height:100vh;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-size:clamp(48px,56px,72px);
+}
+.container h4 {
+    font-size:clamp(24px,36px,56px);
+}
+.container ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin:50px 100px;
+}
+.container ul li{
+    list-style: none;
+}
+
+.container ul li a{
+    color:black;
+    display: block;
+    padding: 10px;
+    font-size: large;
+    text-decoration: none;
+    font-weight: 900;
+}
+.container ul li a:hover{
+    color:tomato;
+}
